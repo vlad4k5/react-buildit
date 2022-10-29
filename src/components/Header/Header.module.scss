@@ -1,0 +1,39 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/mixins.scss';
+
+.header {
+  max-width: 1200px;
+  margin: 65px auto 60px auto;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .logoName {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 44px;
+    }
+  }
+
+  nav {
+    display: flex;
+    gap: 50px;
+
+    a {
+      text-decoration: none;
+      color: $taleLight;
+      font-weight: 500;
+      cursor: pointer;
+    }
+  }
+
+  .needProjectBtn {
+    @include taleButton(10px, 25px)
+  }
+}

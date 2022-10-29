@@ -1,0 +1,17 @@
+@import './variables.scss';
+
+@mixin taleButton ($verticalPads, $horizontalPads) {
+  background: linear-gradient(104.26deg, rgba(67, 151, 164, 0.2) 0.88%, rgba(91, 204, 222, 0.2) 99.89%), $taleBtnBackground;
+  border-radius: 5px;
+  padding: $verticalPads $horizontalPads;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+  cursor: pointer;
+  transition: .2s;
+
+  &:hover {
+    background-color: lighten($taleBtnBackground, 5%);
+  }
+}
